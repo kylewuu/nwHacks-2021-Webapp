@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "Segoe UI";
+  font-weight: 200;
+  src: local("Segoe UI Light");
+}
+@font-face {
+  font-family: "Segoe UI";
+  font-weight: 300;
+  src: local("Segoe UI Semilight");
+}
+@font-face {
+  font-family: "Segoe UI";
+  font-weight: 400;
+  src: local("Segoe UI");
+}
+@font-face {
+  font-family: "Segoe UI";
+  font-weight: 600;
+  src: local("Segoe UI Semibold");
+}
+@font-face {
+  font-family: "Segoe UI";
+  font-weight: 700;
+  src: local("Segoe UI Bold");
+}
+@font-face {
+  font-family: "Segoe UI";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Segoe UI Italic");
+}
+@font-face {
+  font-family: "Segoe UI";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Segoe UI Bold Italic");
+}
+
+* {
+  font-family: "Segoe UI";
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+#uploadPageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+  vertical-align: center;
+  padding-top: 20vh;
+}
+
+#bannerText {
+  font-size: 31px;
+  color: #ff3760;
+
+  font-weight: 600;
+}
+
+#bannerText {
+  color: #ff3760;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(36, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 668px;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #a50000;
+  }
+}
+
+#uploadFile {
+  width: 500px;
+  height: 200px;
+  margin-top: 30px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff3760;
+  color: #ffffff;
+}
+
+#orText {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #757575;
+}
+
+#textInput {
+  width: 500px;
+  border-radius: 5px;
+  height: 50px;
+  border-color: #ff3760;
+  padding-left: 10px;
+}
+
+#submitButton {
+  background-color: #ff3760;
+  border-radius: 5px;
+  color: #ffffff;
+  border: none;
+  height: 30px;
+  width: 80px;
+}
+#submitButton:hover {
+  background-color: #fb0033;
+  cursor: pointer;
+}

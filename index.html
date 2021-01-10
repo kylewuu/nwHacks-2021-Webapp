@@ -1,0 +1,64 @@
+<head>
+    <link rel="stylesheet" href="uploadPage/uploadPage.css">
+    <link rel="stylesheet" href="loadingPage/loadingPage.css">
+    <link rel="stylesheet" href="questionsPage/questionsPage.css">
+  </head>
+
+
+<div id="uploadPage">
+    <body>
+        <div id="uploadPageContainer">
+            <div id="bannerText">Active recall made easy with Quiz.ai</div>
+            <div id="uploadFile">Upload PDF or image here</div>
+            <div id="orText">OR</div>
+            <input type="text" id="textInput" name="fname" placeholder="Enter your text here . . ." ><br>
+            <button id="submitButton">Submit</button>
+        </div>
+    </body>
+</div>
+
+<div id="loadingPage">
+    <div id="loadingContainer">
+        <div id="loading">Loading</div>
+    
+    </div>
+</div>
+
+
+<div id="questionsPage">
+    <div id="questionsNav">
+        <input placeholder="Untitled questions" id="questionsName" class="questionsNavButtons">
+        <div id="questionsNavRightButtons">
+            <button id="goHomeButton" class="questionsNavButtons">Go home</button>
+            <button id="jumpToAnswersButton" class="questionsNavButtons">Jump to answers</button>
+            <button id="exportPDFButton" class="questionsNavButtons">Export to PDF</button>
+        </div>
+    </div>
+    <div id="questionsAndAnswersContainer">
+        <div id="shortAnswers">
+            <!-- <div class="shortAnswerQuestionAndInput">
+                <div id="shortAnswerQuestion1" class="shortAnswerQuestions">1. When was Athena born</div>
+                <input placeholder="" id="shortAnswerInput1" class="shortAnswerInputs">
+            </div> -->
+        </div>
+        
+        <div id="multipleChoice">
+            <div class="multipleChoiceQuestionAndInput">
+                <div id="multipleChoiceQuestion1" class="multipleChoiceQuestions">1. When was Athena born</div>
+                <div></div>
+            </div>
+        </div>
+        
+        <div id="trueFalse">
+            True and false
+        </div>
+    </div>
+    
+    <button id="questionsSubmitButton">Submit</button>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="questionsPage/questionsPage.js"></script>
+<script src="loadingPage/loadingPage.js"></script>
+<script src="uploadPage/uploadPage.js"></script>
