@@ -1,3 +1,4 @@
+// TODO renable this
 // window.onbeforeunload = function() {
 //     return "Data will be lost if you leave the page, are you sure?";
 //   };
@@ -13,4 +14,5 @@ document.getElementById("submitButton").onclick = function () {
 function testingShowQuestionPage(){
     $('#uploadPage').hide();
     $('#questionsPage').show();
+    showQuestionBasedOnType();
 }

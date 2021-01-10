@@ -57,13 +57,13 @@ body {
 
 #bannerText {
   font-size: 31px;
-  color: #ff3760;
+  color: #61a8f8;
 
   font-weight: 600;
 }
 
 #bannerText {
-  color: #ff3760;
+  color: #61a8f8;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -89,7 +89,7 @@ body {
     border-color: transparent;
   }
   50% {
-    border-color: #a50000;
+    border-color: #0379ff;
   }
 }
 
@@ -103,7 +103,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ff3760;
+  background-color: #61a8f8;
   color: #ffffff;
 }
 
@@ -118,12 +118,12 @@ body {
   width: 500px;
   border-radius: 5px;
   height: 50px;
-  border-color: #ff3760;
+  border-color: #61a8f8;
   padding-left: 10px;
 }
 
 #submitButton {
-  background-color: #ff3760;
+  background-color: #61a8f8;
   border-radius: 5px;
   color: #ffffff;
   border: none;
@@ -131,6 +131,6 @@ body {
   width: 80px;
 }
 #submitButton:hover {
-  background-color: #fb0033;
+  background-color: #0379ff;
   cursor: pointer;
 }

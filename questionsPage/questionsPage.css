@@ -1,7 +1,12 @@
-#shortAnswer,
+#shortAnswers,
 #multipleChoice,
 #trueFalse {
   display: none;
+}
+
+span {
+  display: inline-flex;
+  align-items: center;
 }
 
 #questionsPage {
@@ -54,7 +59,7 @@
 }
 
 #exportPDFButton {
-  color: #ff3760;
+  color: #61a8f8;
 }
 
 #questionsAndAnswersContainer {
@@ -63,11 +68,11 @@
 
 .shortAnswerQuestionAndInput {
   width: 80%;
+  margin-top: 75px;
 }
 
 .shortAnswerQuestions {
   font-size: 16px;
-  margin-top: 75px;
 }
 
 .shortAnswerInputs {
@@ -77,7 +82,7 @@
   border-right: none;
   height: 30px;
   margin-top: 5px;
-  border-bottom-color: #f2cad2;
+  border-bottom-color: #b5d3f6;
 }
 .shortAnswerInputs:focus {
   outline: none;
@@ -90,18 +95,51 @@
 }
 @keyframes shortAnswersInputAnimation {
   from {
-    border-bottom-color: #f2cad2;
+    border-bottom-color: #b5d3f6;
   }
   to {
     border-bottom-color: #333333;
   }
 }
 
+.multipleChoiceQuestionAndInput {
+  margin-top: 75px;
+}
+
+.multipleChoiceButton {
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  border: none;
+  background-color: #e1e1e1;
+}
+.multipleChoiceButton:focus {
+  outline: none;
+}
+.multipleChoiceButton:hover {
+  cursor: pointer;
+}
+
+.multipleChoiceAnswers {
+  margin-left: 10px;
+}
+
+.multipleChoiceChoice {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  width: 40%;
+  min-width: 273px;
+}
+.multipleChoiceChoice:hover {
+  cursor: pointer;
+}
+
 #questionsSubmitButton {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: #ff3760;
+  background-color: #61a8f8;
   height: 80px;
   width: 100px;
   border: none;
@@ -111,16 +149,16 @@
   cursor: pointer;
 }
 #questionsSubmitButton:hover {
-  background-color: #fb0033;
+  background-color: #0379ff;
   animation-name: questionsSubmitButtonAnimation;
   animation-duration: 0.15s;
 }
 @keyframes questionsSubmitButtonAnimation {
   from {
-    background-color: #ff3760;
+    background-color: #61a8f8;
   }
   to {
-    background-color: #fb0033;
+    background-color: #0379ff;
   }
 }
 #questionsSubmitButton:focus {

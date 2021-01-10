@@ -2,6 +2,7 @@
     <link rel="stylesheet" href="uploadPage/uploadPage.css">
     <link rel="stylesheet" href="loadingPage/loadingPage.css">
     <link rel="stylesheet" href="questionsPage/questionsPage.css">
+    <link rel="stylesheet" href="answersPage/answersPage.css">
   </head>
 
 
@@ -43,14 +44,96 @@
         </div>
         
         <div id="multipleChoice">
-            <div class="multipleChoiceQuestionAndInput">
+            <!-- <div class="multipleChoiceQuestionAndInput">
                 <div id="multipleChoiceQuestion1" class="multipleChoiceQuestions">1. When was Athena born</div>
-                <div></div>
-            </div>
+                <div class="multipleChoiceChoice">
+                    <button id="multipleChoiceButtonA1" class="multipleChoiceButton"></button>
+                    <span id="multipleChoiceAnswerA1" class="multipleChoiceAnswers">2001</span>
+                </div>
+                <div class="multipleChoiceChoice">
+                    <button id="multipleChoiceButtonB1" class="multipleChoiceButton"></button>
+                    <span id="multipleChoiceAnswerB1" class="multipleChoiceAnswers">2001</span>
+                </div>
+                <div class="multipleChoiceChoice">
+                    <button id="multipleChoiceButtonC1" class="multipleChoiceButton"></button>
+                    <span id="multipleChoiceAnswerC1" class="multipleChoiceAnswers">2001</span>
+                </div>
+                <div class="multipleChoiceChoice">
+                    <button id="multipleChoiceButtonD1" class="multipleChoiceButton"></button>
+                    <span id="multipleChoiceAnswerD1" class="multipleChoiceAnswers">2001</span>
+                </div>
+            </div> -->
         </div>
         
         <div id="trueFalse">
-            True and false
+            <!-- <div class="multipleChoiceQuestionAndInput">
+                <div id="trueFalseQuestion1" class="trueFalseQuestions">1. When was Athena born</div>
+                <div class="multipleChoiceChoice">
+                    <button id="trueFalseButtonTrue1" class="multipleChoiceButton"></button>
+                    <span id="trueFalseAnswerTrue1" class="multipleChoiceAnswers">True</span>
+                </div>
+                <div class="multipleChoiceChoice">
+                    <button id="trueFalseButtonFalse1" class="multipleChoiceButton"></button>
+                    <span id="trueFalseAnswerFalse1" class="multipleChoiceAnswers">False</span>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    
+    <button id="questionsSubmitButton">Submit</button>
+</div>
+
+<div id="answersPage">
+    <div id="questionsNav">
+        <input placeholder="Untitled questions" id="questionsName" class="questionsNavButtons">
+        <div id="questionsNavRightButtons">
+            <button id="goHomeButton" class="questionsNavButtons">Go home</button>
+            <button id="jumpToAnswersButton" class="questionsNavButtons">Jump to answers</button>
+            <button id="exportPDFButton" class="questionsNavButtons">Export to PDF</button>
+        </div>
+    </div>
+    <div id="questionsAndAnswersContainer">
+        <div id="shortAnswersAnswers">
+            <!-- <div class="shortAnswerQuestionAndInput">
+                <div id="shortAnswerQuestion1" class="shortAnswerQuestions">1. When was Athena born</div>
+                <input placeholder="" id="shortAnswerInput1" class="shortAnswerInputs">
+            </div> -->
+        </div>
+        
+        <div id="multipleChoiceAnswers">
+            <!-- <div class="multipleChoiceQuestionAndInput">
+                <div id="multipleChoiceQuestion1" class="multipleChoiceQuestions">1. When was Athena born</div>
+                <div class="multipleChoiceChoice">
+                    <button id="multipleChoiceButtonA1" class="multipleChoiceButton"></button>
+                    <span id="multipleChoiceAnswerA1" class="multipleChoiceAnswers">2001</span>
+                </div>
+                <div class="multipleChoiceChoice">
+                    <button id="multipleChoiceButtonB1" class="multipleChoiceButton"></button>
+                    <span id="multipleChoiceAnswerB1" class="multipleChoiceAnswers">2001</span>
+                </div>
+                <div class="multipleChoiceChoice">
+                    <button id="multipleChoiceButtonC1" class="multipleChoiceButton"></button>
+                    <span id="multipleChoiceAnswerC1" class="multipleChoiceAnswers">2001</span>
+                </div>
+                <div class="multipleChoiceChoice">
+                    <button id="multipleChoiceButtonD1" class="multipleChoiceButton"></button>
+                    <span id="multipleChoiceAnswerD1" class="multipleChoiceAnswers">2001</span>
+                </div>
+            </div> -->
+        </div>
+        
+        <div id="trueFalseAnswers">
+            <!-- <div class="multipleChoiceQuestionAndInput">
+                <div id="trueFalseQuestion1" class="trueFalseQuestions">1. When was Athena born</div>
+                <div class="multipleChoiceChoice">
+                    <button id="trueFalseButtonTrue1" class="multipleChoiceButton"></button>
+                    <span id="trueFalseAnswerTrue1" class="multipleChoiceAnswers">True</span>
+                </div>
+                <div class="multipleChoiceChoice">
+                    <button id="trueFalseButtonFalse1" class="multipleChoiceButton"></button>
+                    <span id="trueFalseAnswerFalse1" class="multipleChoiceAnswers">False</span>
+                </div>
+            </div> -->
         </div>
     </div>
     
@@ -59,6 +142,9 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="questionsPage/multipleChoiceClass.js"></script>
+<script src="questionsPage/trueFalseClass.js"></script>
+<script src="answersPage/answersPage.js"></script>
 <script src="questionsPage/questionsPage.js"></script>
 <script src="loadingPage/loadingPage.js"></script>
 <script src="uploadPage/uploadPage.js"></script>
