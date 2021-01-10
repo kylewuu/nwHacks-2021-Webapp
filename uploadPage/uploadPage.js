@@ -2,7 +2,8 @@
 // window.onbeforeunload = function() {
 //     return "Data will be lost if you leave the page, are you sure?";
 //   };
-testingShowQuestionPage();
+// testingShowQuestionPage();
+
 
 document.getElementById("submitButton").onclick = function () {
     $('#uploadPage').hide();

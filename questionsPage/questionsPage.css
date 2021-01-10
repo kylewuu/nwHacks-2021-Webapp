@@ -11,7 +11,7 @@ span {
 
 #questionsPage {
   display: none;
-  padding: 30px;
+  padding: 30px 40px;
 }
 
 /* body {
@@ -30,6 +30,7 @@ span {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  min-width: 1015px;
 }
 
 .questionsNavButtons {
@@ -42,6 +43,33 @@ span {
 .questionsNavButtons:focus {
   outline: none;
   border: none;
+}
+
+#questionsNavRightButtons {
+  min-width: 588px;
+}
+
+#scoreContainer {
+  display: flex;
+  flex-direction: row;
+}
+.score {
+  font-size: 24px;
+}
+
+#scoreInputInput {
+  height: 34px;
+  width: 38px;
+  margin-right: 3px;
+  border-radius: 5px;
+}
+#scoreInputInput:focus {
+  outline-color: #0379ff;
+}
+
+#scorePercentage {
+  margin-left: 10px;
+  font-weight: 700;
 }
 
 #questionsName {
@@ -66,13 +94,23 @@ span {
   margin-top: 60px;
 }
 
+.dividingLine {
+  width: 80%;
+  height: 1px;
+  background-color: #000000;
+  margin-top: 37.5px;
+  margin-bottom: 37.5px;
+}
+
 .shortAnswerQuestionAndInput {
   width: 80%;
-  margin-top: 75px;
+  /* margin-top: 75px; */
 }
 
 .shortAnswerQuestions {
-  font-size: 16px;
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .shortAnswerInputs {
@@ -81,7 +119,7 @@ span {
   border-left: none;
   border-right: none;
   height: 30px;
-  margin-top: 5px;
+
   border-bottom-color: #b5d3f6;
 }
 .shortAnswerInputs:focus {
@@ -102,8 +140,27 @@ span {
   }
 }
 
+.shortAnswerAnswerLabel {
+  margin-right: 10px;
+}
+
+.shortAnswerAnswerLabelUser {
+  opacity: 0.8;
+  margin-top: 7px;
+}
+
+.shortAnswerAnswerUser {
+  opacity: 0.8;
+  margin-top: 7px;
+}
+
 .multipleChoiceQuestionAndInput {
-  margin-top: 75px;
+  /* margin-top: 75px; */
+}
+
+.multipleChoiceQuestions {
+  font-size: 1.3em;
+  font-weight: 600;
 }
 
 .multipleChoiceButton {
@@ -163,4 +220,21 @@ span {
 }
 #questionsSubmitButton:focus {
   outline: none;
+}
+
+.multipleChoiceQuestionAndTag {
+  display: flex;
+  flex-direction: row;
+}
+
+.correctAnswerTag {
+  margin-left: 15px;
+  color: #36fb85;
+  font-weight: 600;
+}
+
+.incorrectAnswerTag {
+  margin-left: 15px;
+  color: #fe2753;
+  font-weight: 600;
 }

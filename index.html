@@ -86,9 +86,14 @@
 <div id="answersPage">
     <div id="questionsNav">
         <input placeholder="Untitled questions" id="questionsName" class="questionsNavButtons">
+        <div id="scoreContainer">
+            <div id="scoreInput" class="score">10</div>
+            <div id="scoreTotal" class="score">/20</div>
+            <div id="scorePercentage" class="score">(50%)</div>
+        </div>
         <div id="questionsNavRightButtons">
-            <button id="goHomeButton" class="questionsNavButtons">Go home</button>
-            <button id="jumpToAnswersButton" class="questionsNavButtons">Jump to answers</button>
+            <button id="goHomeButtonAnswers" class="questionsNavButtons">Go home</button>
+            <button id="jumpToAnswersButton" class="questionsNavButtons">Do these questions again</button>
             <button id="exportPDFButton" class="questionsNavButtons">Export to PDF</button>
         </div>
     </div>
@@ -136,14 +141,14 @@
             </div> -->
         </div>
     </div>
-    
-    <button id="questionsSubmitButton">Submit</button>
+
 </div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="questionsPage/multipleChoiceClass.js"></script>
 <script src="questionsPage/trueFalseClass.js"></script>
+<script src="questionsPage/shortAnswersClass.js"></script>
 <script src="answersPage/answersPage.js"></script>
 <script src="questionsPage/questionsPage.js"></script>
 <script src="loadingPage/loadingPage.js"></script>
